@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>HELLOOOOOOOOOOOOO</p>
+    <p>abortion status</p>
     <button @click="clickBtn">click me</button>
     <p>{{ data }}</p>
   </div>
