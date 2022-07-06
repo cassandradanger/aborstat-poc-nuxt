@@ -4,208 +4,204 @@ let states = [
       abbr: 'AL'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Alaska',
+      abbr: 'AK'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Arizona',
+      abbr: 'AZ'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Arkansas',
+      abbr: 'AR'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'California',
+      abbr: 'CA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Colorado',
+      abbr: 'CO'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Connecticut',
+      abbr: 'CT'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Delaware',
+      abbr: 'DE'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'District of Columbia',
+      abbr: 'DC'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Florida',
+      abbr: 'FL'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Georgia',
+      abbr: 'GA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Hawaii',
+      abbr: 'HI'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Idaho',
+      abbr: 'ID'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Illinois',
+      abbr: 'IL'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Indiana',
+      abbr: 'IN'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Iowa',
+      abbr: 'IA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Kansas',
+      abbr: 'KS'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Kentucky',
+      abbr: 'KY'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Louisiana',
+      abbr: 'LA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Maine',
+      abbr: 'ME'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Maryland',
+      abbr: 'MD'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Massachusetts',
+      abbr: 'MA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Michigan',
+      abbr: 'MI'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Minnesota',
+      abbr: 'MN'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Mississippi',
+      abbr: 'MS'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Missouri',
+      abbr: 'MO'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Montana',
+      abbr: 'MT'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Nebraska',
+      abbr: 'NE'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Nevada',
+      abbr: 'NV'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'New Hampshire',
+      abbr: 'NH'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'New Jersey',
+      abbr: 'NJ'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'New Mexico',
+      abbr: 'NM'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'New York',
+      abbr: 'NY'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'North Carolina',
+      abbr: 'NC'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'North Dakota',
+      abbr: 'ND'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Ohio',
+      abbr: 'OH'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Oklahoma',
+      abbr: 'OK'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Oregon',
+      abbr: 'OR'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Pennsylvania',
+      abbr: 'PA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Rhode Island',
+      abbr: 'RI'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'South Carolina',
+      abbr: 'SC'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'South Dakota',
+      abbr: 'SD'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Tennessee',
+      abbr: 'TN'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Texas',
+      abbr: 'TX'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Utah',
+      abbr: 'UT'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Vermont',
+      abbr: 'VT'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Virginia',
+      abbr: 'VA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Washington',
+      abbr: 'WA'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'West Virginia',
+      abbr: 'WV'
     },
     {
-      name: '',
-      abbr: ''
+      name: 'Wisconsin',
+      abbr: 'WI'
     },
     {
-      name: '',
-      abbr: ''
-    },
-    {
-      name: '',
-      abbr: ''
+      name: 'Wyoming',
+      abbr: 'WY'
     },
   ];
 
