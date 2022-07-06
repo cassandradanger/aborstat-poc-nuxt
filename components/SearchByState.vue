@@ -37,7 +37,9 @@ export default {
       this.getInfo();
     },
     getInfo() {
-      axios.get(`http://localhost:9000/info/gestational_limits/${this.selected.abbr}/`)
+      axios.get(`http://localhost:9000/info/gestational_limits/${this.selected.abbr}/`, {xhrFields: {
+        withCredentials: true
+    }})
       .then((res) => {
         console.log('res', res);
         let response = res.data[0][this.selected.name];            
