@@ -37,7 +37,7 @@ export default {
       this.getInfo();
     },
     getInfo() {
-      axios.get(`/api/info/gestational_limits/${this.selected.abbr}/`)
+      axios.get(`http://localhost:9000/api/info/gestational_limits/${this.selected.abbr}/`)
       .then((res) => {
         console.log('res', res);
         let response = res.data[0][this.selected.name];            
