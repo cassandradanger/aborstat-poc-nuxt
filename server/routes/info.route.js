@@ -8,9 +8,9 @@ var rp = require('request-promise');
 let apiKey = process.env.API_KEY;
 const states = require('../modules/states-list.js')
 
-router.get('/', (req, res) => {
+router.get('/gestational_limits/:state', (req, res) => {
   rp({
-    uri: 'https://api.abortionpolicyapi.com/v1/gestational_limits/states/',
+    uri: `https://api.abortionpolicyapi.com/v1/gestational_limits/states/${req.params.state}`,
     method: 'GET',
     headers: { 'token': apiKey },
     json: true
