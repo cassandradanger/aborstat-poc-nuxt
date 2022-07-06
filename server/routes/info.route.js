@@ -2,11 +2,9 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
 const express = require('express');
-const { reset } = require('nodemon');
 const router = express.Router();
 var rp = require('request-promise');
 let apiKey = process.env.API_KEY;
-const states = require('../modules/states-list.js')
 
 router.get('/gestational_limits/:state', (req, res) => {
   rp({
@@ -23,10 +21,5 @@ router.get('/gestational_limits/:state', (req, res) => {
       res.sendStatus(500);
   });
 });
-
-router.get('/states-list', (req, res) => {
-  console.log('hello');
-  res.status(200).json((states));
-})
 
 module.exports = router;
