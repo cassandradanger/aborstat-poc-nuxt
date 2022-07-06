@@ -8,7 +8,7 @@ let apiKey = process.env.API_KEY;
 
 router.get('/gestational_limits/:state', (req, res) => {
   rp({
-    uri: `https://api.abortionpolicyapi.com/v1/gestational_limits/states/${req.params.state}`,
+    uri: `https://api.abortionpolicyapi.com/v1/gestational_limits/states/${req.params.state}/`,
     method: 'GET',
     headers: { 'token': apiKey },
     json: true
