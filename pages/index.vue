@@ -1,31 +1,30 @@
 <template>
   <div>
-    <p>abortion status</p>
-    <button @click="clickBtn">click me</button>
-    <p>{{ data }}</p>
+    <SearchByState :states="states" />
   </div>
 </template>
 
 <script>
+import SearchByState from '/components/SearchByState';
+
 export default {
   name: 'IndexPage',
+  components: { SearchByState },
   data(){
     return{
-      data: {},
+      states: [],
     }
   },
+  mounted(){
+    this.fetchStates();
+  },
   methods: {
-    clickBtn() {
-      console.log("hello");
-      this.asyncData();
-    },
-    async asyncData() {
+    async fetchStates() {
       try {
-        return await fetch("http://localhost:9000/info")
+        return await fetch("http://localhost:9000/info/states-list")
           .then(res => res.json())
           .then(data => {
-            console.log('data', data);
-            this.data = data;
+            this.states = data;
           });
       } catch (e) {
         console.error("SOMETHING WENT WRONG :" + e);
