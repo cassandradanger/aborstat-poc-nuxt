@@ -37,7 +37,7 @@ export default {
     },
     async asyncData() {
       try {
-        return await fetch(`https://localhost:9000/info/gestational_limits/${this.selected.abbr}/`)
+        return await fetch(`http://localhost:9000/info/gestational_limits/${this.selected.abbr}/`)
           .then(res => res.json())
           .then(data => {
             console.log('data', data);
