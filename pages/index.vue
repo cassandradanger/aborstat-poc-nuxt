@@ -46,10 +46,6 @@ export default {
           abbr: 'DE'
         },
         {
-          name: 'District of Columbia',
-          abbr: 'DC'
-        },
-        {
           name: 'Florida',
           abbr: 'FL'
         },

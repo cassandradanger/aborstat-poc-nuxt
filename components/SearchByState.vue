@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'SearchByState',
   props: ['states'],
@@ -33,25 +34,22 @@ export default {
   methods: {
     submitBtn() {
       console.log("hello", this.selected);
-      this.asyncData();
+      this.getInfo();
     },
-    async asyncData() {
-      try {
-        return await fetch(`http://localhost:9000/info/gestational_limits/${this.selected.abbr}/`)
-          .then(res => res.json())
-          .then(data => {
-            console.log('data', data);
-            let response = data[0][this.selected.name];            
-            this.banned_after_weeks_since_LMP = response.banned_after_weeks_since_LMP;
-            this.exception_life = response.exception_life;
-            this.exception_health = response.exception_health;
-            this.exception_fetal = response.exception_fetal;
-            this.exception_rape_or_incest = response.exception_rape_or_incest;
-          });
-      } catch (e) {
-        console.error("SOMETHING WENT WRONG :" + e);
-      }
-    },
+    getInfo() {
+      axios.get(`http://localhost:9000/info/gestational_limits/${this.selected.abbr}/`)
+      .then((res) => {
+        console.log('res', res);
+        let response = res.data[0][this.selected.name];            
+        this.banned_after_weeks_since_LMP = response.banned_after_weeks_since_LMP;
+        this.exception_life = response.exception_life;
+        this.exception_health = response.exception_health;
+        this.exception_fetal = response.exception_fetal;
+        this.exception_rape_or_incest = response.exception_rape_or_incest;
+      }).catch((err) => {
+        console.log("there was an error getting info: ", err);
+      })
+    }
   }
 }
 </script>
