@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const info = require('./routes/info.route.js')
+const info = require('./api/info.js')
 const app = express();
 
 app.use((req, res, next) => {
