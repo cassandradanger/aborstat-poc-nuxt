@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SearchByState from '/components/SearchByState';
+import SearchByState from './SearchByState';
 
 export default {
   name: 'IndexPage',

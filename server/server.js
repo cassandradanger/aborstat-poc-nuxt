@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/info', info);
+app.use('/api/info', info);
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.listen(9000, () => {
