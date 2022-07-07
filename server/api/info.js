@@ -14,7 +14,6 @@ router.get('/gestational_limits/:state', (req, res) => {
     json: true
   }).then(function success(response) {
       if (response) {
-        var states = Object.keys(response);
         res.status(200).json([response]);
       }
   }).catch(function error(response) {

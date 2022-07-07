@@ -36,8 +36,8 @@ export default {
       console.log("hello", this.selected);
       this.getInfo();
     },
-    getInfo() {
-      axios.get(`https://bespoke-pixie-dd6ecd.netlify.app/api/info/gestational_limits/${this.selected.abbr}/`)
+    async getInfo() {
+      await fetch(`api/info/gestational_limits/${this.selected.abbr}/`)
       .then((res) => {
         console.log('res', res);
         let response = res.data[0][this.selected.name];            
